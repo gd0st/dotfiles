@@ -1,0 +1,7 @@
+#+title: Readme
+
+* Requirements
+Please install =stow= before configuring any of these packages.
+#+begin_src
+nix
+#+end_src
