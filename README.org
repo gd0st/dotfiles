@@ -1,7 +1,16 @@
-#+title: Readme
+# =dotfiles=
 
-* Requirements
-Please install =stow= before configuring any of these packages.
-#+begin_src
-nix
-#+end_src
+A collection of my dotfiles on a public repo so I can easily configure my systems.
+
+## Usage
+For easiest use, install [gnu stow](https://www.gnu.org/software/stow/) 
+
++ Fedora -- `sudo dnf install stow`
++ Ubuntu -- 'sudo apt install stow'
+
+Clone the repository to your `$HOME` path.
+
+Change directories to `~/dotfiles` and use `stow <directory name>` to symlink your configuration files.
+
+Instructions for additional tool instructions are not provided here.
+
