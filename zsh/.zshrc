@@ -30,6 +30,8 @@ export GOPATH="$dev_dir/go"
 
 # nodejs
 export NVM_DIR="$HOME/.nvm"
+
+# node
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -56,4 +58,20 @@ export CDPATH="$HOME/.code:$CDPATH"
 alias tempd='tmpd=$(mktemp -d)'
 alias tempf='tmpf=$(mktemp)'
 
+export EDITOR="vim"
+
 # Macros
+#
+function mkcd() {
+	local target=$1
+	mkdir -p $target
+	cd $target
+}
+
+function mkconfig() {
+	local target=$1
+	mkdir -p "$HOME/.config/$target"
+	cd "$HOME/.config/$target"
+}
+
+[ -f "/home/gd0st/.ghcup/env" ] && . "/home/gd0st/.ghcup/env" # ghcup-env
