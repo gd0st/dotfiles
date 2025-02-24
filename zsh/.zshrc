@@ -53,12 +53,13 @@ export PATH="$PATH:$HOME/.config/emacs/bin"
 alias clear="clear -x"
 alias tree="tree -a"
 
-export CDPATH="$HOME/.code:$CDPATH"
+export CDPATH="$HOME/code:$CDPATH"
 
 alias tempd='tmpd=$(mktemp -d)'
 alias tempf='tmpf=$(mktemp)'
 
 export EDITOR="vim"
+
 
 # Macros
 #
