@@ -75,4 +75,9 @@ function mkconfig() {
 	cd "$HOME/.config/$target"
 }
 
+function find-ansible-groups() {
+	local host=$1
+	ansible $host -m debug -a 'var=group_names' -i ./inventory;host=acrux.uberspace.de || exit "something went wrong"
+}
+
 [ -f "/home/gd0st/.ghcup/env" ] && . "/home/gd0st/.ghcup/env" # ghcup-env
